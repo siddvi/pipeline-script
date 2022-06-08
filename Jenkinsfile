@@ -16,8 +16,8 @@ pipeline {
         }
         stage('remove directory') {
             steps {
-                sh 'rmdir flower'
-                echo 'rmdir flower'
+                sh 'rm -r flower'
+                echo 'flower'
             }
         stage('creating directory') {
             steps {
