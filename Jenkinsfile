@@ -20,6 +20,12 @@ pipeline {
                 echo 'mkdir flower'
             }
         }
+        stage('creating file') {
+            steps {
+                sh 'touch file'
+                echo 'touch file'
+            }
+        }
         
     }
 }
