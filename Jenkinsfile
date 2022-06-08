@@ -19,6 +19,7 @@ pipeline {
                 sh 'rm -r flower'
                 echo 'flower'
             }
+        }
         stage('creating directory') {
             steps {
                 sh 'mkdir flower'
