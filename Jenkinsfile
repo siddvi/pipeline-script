@@ -14,6 +14,11 @@ pipeline {
                 echo 'bengaluru'
             }
         }
+        stage('remove directory') {
+            steps {
+                sh 'rmdir flower'
+                echo 'rmdir flower'
+            }
         stage('creating directory') {
             steps {
                 sh 'mkdir flower'
